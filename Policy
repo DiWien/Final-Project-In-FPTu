@@ -1,0 +1,71 @@
+**WiFi Pentest Policy (Within Project Scope)**
+
+**Agreement and Legal Compliance:**
+- Pentesting is only conducted with the explicit consent and agreement of the system or Wi-Fi network owner.
+- Adherence to all relevant legal regulations and policies regarding security testing.
+
+**Recording and Information Security:**
+- Comprehensive recording of all pentesting activities and outcomes.
+- Stringent information security measures to prevent sensitive data from falling into unauthorized hands.
+
+**Scope Definition:**
+- Clear delineation of the pentest scope, including specific devices and Wi-Fi networks authorized for assessment.
+- Limitation of impact on unrelated devices and networks (internal machinery).
+
+**Security Assessment:**
+- Utilization of appropriate tools and techniques to assess Wi-Fi network security, encompassing WEP, WPA, and WPA2 vulnerabilities.
+- Examination of configuration, encryption, and Wi-Fi network authentication methods.
+
+**Reporting and Evaluation:**
+- Creation of detailed reports highlighting vulnerabilities, weaknesses, and recommendations for security enhancement.
+- Assessment of risk levels associated with each vulnerability and recommendation of prioritized measures for remediation.
+
+**Ethics and Responsibility:**
+- Conducting all activities with the highest ethical standards and sense of responsibility during the pentest process, avoiding unnecessary harm to systems or networks.
+- Respect for the privacy and security of Wi-Fi network users.
+
+**Learning and Knowledge Update:**
+- Continuous updating of knowledge and skills in Wi-Fi network security to address emerging threats.
+- Learning from new pentest techniques and practical experiences.
+
+**Router Pentest Policy:**
+
+**Agreement and Legal Compliance:**
+- Ensuring prior consent and agreement from the router owner before conducting any pentest-related activities.
+- Identification and compliance with all relevant legal regulations and policies regarding security testing.
+
+**Scope Definition:**
+- Clearly defining the scope of router pentest, including specific router devices and related network services.
+- Restricting impact on unrelated devices and services outside the pentest scope.
+
+**Security Assessment:**
+- Utilization of suitable tools and techniques to assess router security, including default configuration checks, open network ports, software, and firmware updates.
+- Examination of router login and management protocol security, as well as wireless network configuration and security.
+
+**Recording and Information Security:**
+- Thorough recording of all pentest activities and outcomes.
+- Stringent information security measures to safeguard sensitive data.
+
+**Reporting and Evaluation:**
+- Generation of detailed reports outlining router vulnerabilities, weaknesses, and recommendations for security improvement.
+- Evaluation of risk levels associated with each vulnerability and proposal of prioritized measures for mitigation.
+
+**Ethics and Responsibility:**
+- Conducting all activities with utmost ethics and responsibility during the pentest process, minimizing unnecessary harm to systems or networks.
+- Respect for the privacy and security of router users and owners.
+
+**Learning and Knowledge Update:**
+- Continuous updating of knowledge and skills in router security to address emerging threats.
+- Learning from new pentest techniques and practical experiences.
+
+**DMZ Pentest Policy:**
+
+**Attack Approach:**
+
+**Vulnerability Assessment:**
+- Utilization of Metasploit modules to exploit known vulnerabilities in services or applications running on servers within the DMZ network.
+- Use of tools like msfconsole to discover security vulnerabilities on servers and services.
+
+**Spoofing Attacks:**
+- Employment of Metasploit modules to create spoofed packets and conduct spoofing attacks on IP and MAC addresses within the DMZ network.
+- Spoofing attacks may lead to deception of systems and control over network traffic.
