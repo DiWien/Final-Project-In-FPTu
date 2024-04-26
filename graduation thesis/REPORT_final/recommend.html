@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <title>REPORT
+    </title>
+    <style>
+        /* Cài đặt font chữ */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 0;
+            background-color: hsl(0, 0%, 97%);
+            font-size: 16px;
+        }
+
+        /* Cài đặt màu nền cho toàn trang */
+        body {
+            background-color: hsl(0, 0%, 92%);
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #003359;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            margin: -20px;
+            z-index: 999;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Thanh menu dọc */
+        .sidebar {
+            position: fixed;
+            top: 10;
+            left: 0;
+            height: 100%;
+            width: 220px;
+            background-color: #bec4c3; 
+            color: #fff;
+            margin-top: 32px;
+            margin-left: 0px; 
+            
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #003359;
+            text-indent: 5px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #797777;
+        }
+
+        /* Nội dung chính */
+        main {
+            margin-left: 220px;
+            padding: 40px;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 40px;
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        /* Bảng */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        /* Tô màu cho từng section */
+        .intro {
+            background-color: #f5f5f5;
+        }
+
+        /* Liên kết */
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .link a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            color: red;
+        }
+
+        #nav-recommend a {
+            color: #ff0000; /* Mã màu đỏ */
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PENNET REPORT</h1>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li id="nav-homepage"><a href="index.html"><i class="fas fa-home"></i>      Homepage</a></li>
+            <li id="nav-recon"><a href="recon.html"><i class="fas fa-search"></i>      Reconnaissance</a></li>
+            <li id="nav-analysis"><a href="analysis.html"><i class="fas fa-diagnoses"></i> Analysis</a></li>
+            <li id="nav-exploit"><a href="exploit.html"><i class="fas fa-bug"></i>  Exploit</a></li>
+            <li id="nav-recommend"><a href="recommend.html"><i class="fas fa-comments"></i> Recommend</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="intro">
+            <hr><hr>
+            <h2>RECOMMENDATIONS BASED ON OUR POLICY </h2>
+            <hr>
+            <hr>
+            <h4>Note: Based on OUR POLICY with analysis and findings, we recommend the following actions . </h4>
+            <br>
+            <h3>1. Strengthen Wi-Fi Network Security:</h3>
+            <ul>
+                <p>- Upgrade encryption algorithms from WEP or WPA, WPA2 to the latest standard, WPA3, to ensure stronger protection against unauthorized access.</p>
+                <p>- Implement a robust password policy requiring complex, unique passwords for Wi-Fi access. Consider using passphrases for added security.</p>
+                <p>- Enable Wi-Fi Protected Access (WPA) Enterprise mode for authentication, which offers more secure authentication than WPA Personal mode.</p>
+                <p>- Deploy intrusion detection and prevention systems (IDPS) to monitor network traffic for suspicious activities and potential security breaches.</p>
+                <p>- References: <a href="https://www.cnet.com/home/internet/stop-home-network-hackers-top-10-tips-to-protect-your-wi-fi-security" class="link">https://www.cnet.com/home/internet/stop-home-network-hackers-top-10-tips-to-protect-your-wi-fi-security</a></p>
+            </ul>
+            <br>
+            <h3>2. Secure the Router</h3>
+            <ul>
+                <p>- Disable unnecessary services and close unused ports on the router to minimize the attack surface and reduce the risk of exploitation.</p>
+                <p>- Change default administrative credentials (username and password) to strong, unique values. Use a combination of uppercase and lowercase letters, numbers, and special characters.</p>
+                <p>- Regularly update the router firmware to patch known vulnerabilities and ensure that the latest security updates are applied.</p>
+                <p>- Implement strong access control policies to restrict administrative access to the router, allowing only authorized personnel to make configuration changes.</p>
+                <p>- References: <a href="https://www.linkedin.com/advice/1/what-best-practices-securing-your-router-skills-technical-support-rfisc">https://www.linkedin.com/advice/1/what-best-practices-securing-your-router-skills-technical-support-rfisc</a></p>
+            </ul>
+            <br>
+            <h3>3. Conduct Security Awareness Training:</h3>
+            <ul>
+                <p>- Provide comprehensive security awareness training to all employees to educate them about the importance of cybersecurity and best practices for safeguarding sensitive information.</p>
+                <p>- Offer phishing awareness training to help employees recognize and report suspicious emails and phishing attempts.</p>
+                <p>- Conduct regular security drills and simulations to test employees'responses to security incidents and reinforce training.</p>
+                <p>- References: <a href="https://aware.eccouncil.org/security-awareness-training-6-important-training-practices.html">https://aware.eccouncil.org/security-awareness-training-6-important-training-practices.html</a></p>
+            </ul>
+            <br>
+            <h3>4. Implement Regular Security Audits:</h3>
+            <ul>
+                <p>- Schedule periodic security assessments and audits to identify vulnerabilities, misconfigurations, and weaknesses in the network infrastructure.</p>
+                <p>- Perform penetration testing and vulnerability scanning to simulate real-world attacks and evaluate the effectiveness of existing security controls.</p>
+                <p>- Establish a formal incident response plan outlining procedures for detecting, responding to, and recovering from security incidents.</p>
+                <p>- References: <a href="https://www.linkedin.com/pulse/how-conduct-regular-security-audits-safety-ops-specialists/">https://www.linkedin.com/pulse/how-conduct-regular-security-audits-safety-ops-specialists/</a></p>
+            </ul>
+            <br>
+            <h3>5. Follow Industry Standards and Guidelines:</h3>
+            <ul>
+                <p>- Align security practices with industry standards and best practices, such as the NIST Cybersecurity Framework, CIS Controls, and ISO/IEC 27001.</p>
+                <p>- Stay informed about emerging threats and security trends by participating in industry forums, conferences, and information-sharing communities.</p>
+                <p>- Engage with cybersecurity professionals and consultants to assess security posture, address compliance requirements, and implement risk management strategies</p>
+                <p>- References: <a href="https://fastercapital.com/content/Industry-Standards--How-to-Learn-and-Follow-the-Industry-Standards-for-Your-Technical-and-Occupational-Field.html">https://fastercapital.com/content/Industry-Standards--How-to-Learn-and-Follow-the-Industry-Standards-for-Your-Technical-and-Occupational-Field.html</a></p>
+            </ul>
+        </section>
+
+            

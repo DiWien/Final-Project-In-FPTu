@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <title>REPORT
+    </title>
+    <style>
+        /* Cài đặt font chữ */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 0;
+            background-color: hsl(0, 0%, 97%);
+            font-size: 16px;
+        }
+        /* Cài đặt màu nền cho toàn trang */
+        body {
+            background-color: hsl(0, 0%, 92%);
+        }
+
+        /* Header */
+        header {
+            background-color: #003359;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            margin: -20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Thanh menu dọc */
+        .sidebar {
+            position: fixed;
+            top: 10;
+            left: 0;
+            height: 100%;
+            width: 220px;
+            background-color: #bec4c3; /* Màu xám pastel nhạt hơn */
+            color: #fff;
+            margin-top: 20px;
+            margin-left: 0px; /* Thêm thuộc tính margin-left */
+            
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #003359;
+            text-indent: 5px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #797777;
+        }
+
+        /* Nội dung chính */
+        main {
+            margin-left: 220px;
+            padding: 40px;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        /* Bảng */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+        
+        /* Tô màu cho từng section */
+        .services-discovery {
+            background-color: #f5f5f5;
+        }
+        /* Margin bottom cho phần tử host-discovery */
+        .services-discovery {
+            margin-bottom: 20px; /* Thay đổi giá trị theo nhu cầu */
+        }
+
+        .port-discovery {
+            background-color: #f5f5f5;
+        }
+        /* Margin bottom cho phần tử host-discovery */
+        .port-discovery {
+            margin-bottom: 20px; /* Thay đổi giá trị theo nhu cầu */
+        }
+
+        /* Liên kết */
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* Màu cho liên kết trong cột "Subnets" */
+        .host-link a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Màu khi di chuột qua liên kết trong cột "Subnets" */
+        .host-link a:hover {
+            color: red;
+        }
+
+        #nav-recon a {
+            color: #ff0000; /* Mã màu đỏ */
+        }
+        .status-content {
+            text-align: center;
+        }
+
+        .status-content .open {
+            color: #00FF00; /* Màu xanh lá */
+        }
+        .status-content .filtered {
+            color: red; /* Màu xanh lá */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PENNET REPORT</h1>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li id="nav-homepage"><a href="index.html"><i class="fas fa-home"></i>      Homepage</a></li>
+            <li id="nav-recon"><a href="recon.html"><i class="fas fa-search"></i>      Reconnaissance</a></li>
+            <li id="nav-analysis"><a href="analysis.html"><i class="fas fa-diagnoses"></i> Analysis</a></li>
+            <li id="nav-exploit"><a href="exploit.html"><i class="fas fa-bug"></i>  Exploit</a></li>
+            <li id="nav-recommend"><a href="recommend.html"><i class="fas fa-comments"></i> Recommend</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="services-discovery">
+            <h2>Services Discovery</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="host-link">HOST LIST</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="host-link"><a href="servicehost1.html">192.168.1.1</a></td>
+                    </tr>
+                    <tr>
+                        <td class="host-link"><a href="servicehost2.html">192.168.3.5</a></td>
+                    </tr>
+                    <tr>
+                        <td class="host-link"><a href="servicehost3.html">192.168.10.1</a></td>
+                    </tr>
+                    <tr>
+                        <td class="host-link"><a href="servicehost4.html">192.168.10.103</a></td>
+                    </tr>
+                    <tr>
+                        <td class="host-link"><a href="servicehost5.html">192.168.10.104</a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+        <section class="port-discovery">
+            <h2>Host IP: 192.168.10.103</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="port">Port</th>
+                        <th class="protocal">Tcp/Udp</th>
+                        <th class="service">Service</th>
+                        <th class="status">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="port">21</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">ftp</td>
+                        <td class="status">
+                            <div class="status-content"><span class="filtered">filtered</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="port">22</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">ssh</td>
+                        <td class="status">
+                            <div class="status-content"><span class="filtered">filtered</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="port">23</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">telnet</td>
+                        <td class="status">
+                            <div class="status-content"><span class="filtered">filtered</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="port">25</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">smtp</td>
+                        <td class="status">
+                            <div class="status-content"><span class="filtered">filtered</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="port">80</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">http Microsoft IIS httpd 10.0</td>
+                        <td class="status">
+                            <div class="status-content"><span class="open">open</span></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="port">443</td>
+                        <td class="protocal">tcp</td>
+                        <td class="service">https</td>
+                        <td class="status">
+                            <div class="status-content"><span class="filtered">filtered</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>

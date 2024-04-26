@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <title>REPORT
+    </title>
+    <style>
+        /* Cài đặt font chữ */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 0;
+            background-color: hsl(0, 0%, 97%);
+            font-size: 16px;
+        }
+
+        /* Cài đặt màu nền cho toàn trang */
+        body {
+            background-color: hsl(0, 0%, 92%);
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #003359;
+            color: #fff;
+            padding: 25px;
+            text-align: center;
+            margin: -20px;
+            z-index: 999;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Thanh menu dọc */
+        .sidebar {
+            position: fixed;
+            top: 10;
+            left: 0;
+            height: 100%;
+            width: 220px;
+            background-color: #bec4c3; /* Màu xám pastel nhạt hơn */
+            color: #fff;
+            margin-top: 32px;
+            margin-left: 0px; /* Thêm thuộc tính margin-left */
+            
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #003359;
+            text-indent: 5px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #797777;
+        }
+
+        /* Nội dung chính */
+        main {
+            margin-left: 220px;
+            padding: 40px;
+        }
+
+        /* Section */
+        section {
+            margin-bottom: 40px;
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        /* Bảng */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        /* Tô màu cho từng section */
+        .intro {
+            background-color: #f5f5f5;
+        }
+
+        /* Liên kết */
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #nav-analysis a {
+            color: #ff0000; /* Mã màu đỏ */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PENNET REPORT</h1>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li id="nav-homepage"><a href="index.html"><i class="fas fa-home"></i>      Homepage</a></li>
+            <li id="nav-recon"><a href="recon.html"><i class="fas fa-search"></i>      Reconnaissance</a></li>
+            <li id="nav-analysis"><a href="analysis.html"><i class="fas fa-diagnoses"></i> Analysis</a></li>
+            <li id="nav-exploit"><a href="exploit.html"><i class="fas fa-bug"></i>  Exploit</a></li>
+            <li id="nav-recommend"><a href="recommend.html"><i class="fas fa-comments"></i> Recommend</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="intro">
+            <hr><hr>
+            <h2>ANALYSIS OF POTENTIAL VULNERABILITIES</h2>
+            <hr>
+            <hr>
+            <h3>I/ Our Sequences</h3>
+            <h4>1. General information collected after scanning</h4>
+                <p>- Review the data gathered from the reconnaissance phase, including active hosts, device details, and services. </p>
+                <p>a) Active hosts:</p>
+                <ul>
+                    <li>192.168.0.1</li>
+                    <li>192.168.1.1 (Router)</li>
+                    <li>192.168.10.1 (Access Point)</li>
+                    <li>192.168.10.103</li>
+                    <li>192.168.10.104</li>
+                    <li>192.168.2.1</li>
+                    <li>192.168.3.1</li>
+                    <li>192.168.3.5</li>
+                </ul>
+                <p>b) Access Point: Home Company </p>
+                <ul>
+                    <li>IP Address: 192.168.10.1</li>
+                    <li>BSSID: C8:3A:35:46:5F:30</li>
+                    <li>Channel: 1</li>
+                    <li>Encryption: WPA2</li>
+                </ul>
+                <p>c) Router: 7200 Software</p>
+                <ul>
+                    <li>Image: C7200-ADVENTERPRISEK9-M</li>
+                    <li>IP Address: 192.168.1.1</li>
+                    <li>Version: 12.4(24)TS</li>
+                    <li>Services:</li>
+                    <ul>
+                        <p>21/tcp - state:filtered - service:ftp</p>
+                        <p>22/tcp - state:filtered - service:ssh</p>
+                        <p>23/tcp - state:open - service:telnet (Cisco router telnetd)</p>
+                        <p>25/tcp - state:filtered - service:smtp</p>
+                        <p>80/tcp - state:open - service:http (Cisco IOS http config)</p>
+                        <p>443/tcp - state:filtered - service:https</p>
+                    </ul>
+                </ul>
+            <h4>2. Narrow down which devices are vulnerable</h4>
+                <p>- We'll focus on the access point and router device</p>
+                <p>a) For the Router (192.168.1.1):</p>
+                <ul>
+                    <li>Identify open ports like telnet (23/tcp), ssh (22/tcp), and http (80/tcp).</li>
+                    <li>Evaluate if the router's firmware is up-to-date, as newer versions often include security patches and bug fixes.</li>
+                </ul>
+                <p>b) For the Wi-Fi network (Home Company):</p>
+                <ul>
+                    <li>Assess the strength of WPA2 encryption to determine susceptibility to attacks.</li>
+                    <li>Identify any weaknesses or vulnerabilities in the Wi-Fi network configuration, such as default or easily guessable passwords.</li>
+                    <li>Develop strategies to exploit vulnerabilities, including capturing handshake and performing dictionary attacks to assess the network's resilience to intrusion.</li>
+                </ul>
+
+            <h4>3. Plan a scenario for an attack to verify it</h4>
+        </section>
+
+            
