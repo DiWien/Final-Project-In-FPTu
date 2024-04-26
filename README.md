@@ -1,17 +1,21 @@
 # Project Final
 Hello everyone,
 
-We are Pennet Team, specializing in implementing pentesting methodologies for network security. This is our graduation project focusing on the small enterprise network model.
+We are the Pennet Team, dedicated to deploying cutting-edge pentesting methodologies to enhance network security. Our latest endeavor is our graduation project, which revolves around the small enterprise network model.
 
-The tools we have integrated include aircrack-ng, nmap, and routersploit.
+In our arsenal, we've integrated powerful tools such as aircrack-ng, nmap, and routersploit. These tools empower us to conduct thorough assessments and uncover vulnerabilities within network infrastructures.
 
-We implemented this project on gns3 and used physical wireless network devices to perform pentesting.
-Our tool can be implemented in two directions: Black box and white box
+For the execution of our project, we leveraged the versatile platform of GNS3 and incorporated physical wireless network devices to simulate real-world scenarios. Our toolset is designed to operate in two distinct modes: Black box and white box, ensuring comprehensive coverage in vulnerability identification and assessment.
 
-Thank you everyone for using it
+We extend our sincere gratitude to everyone who has utilized our project and supported us throughout this journey.
 
-Team Member
-Quan Nguyen Dinh
-Nhat Tran Minh 
-Tam Minh Nguyen
-Nhan Nguyen Thanh
+Best regards,
+
+Team Pennet
+
+Members:
+- Quan Nguyen Dinh
+- Nhat Tran Minh
+- Minh Tam Nguyen
+- Nhan Nguyen Thanh
+
